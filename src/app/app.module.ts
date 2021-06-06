@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { ExploreComponent } from './components/explore/explore.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FeedComponent } from './components/feed/feed.component';
 import { StoriesComponent } from './components/stories/stories.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { StoriesComponent } from './components/stories/stories.component';
     ExploreComponent,
     DashboardComponent,
     FeedComponent,
-    StoriesComponent
+    StoriesComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
