@@ -22,7 +22,7 @@ export class PostsComponent implements OnInit {
   ngOnInit(): void {
 
     this.route.params.subscribe(data => {
-      this.id = data.id
+      this.id = data.id - 1
     })
 
     this.postService.getPosts().subscribe((data) => {
