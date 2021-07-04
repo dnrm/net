@@ -11,6 +11,7 @@ export class FeedComponent implements OnInit {
 
   public id: number
   public posts: any
+  public times: Array<any>;
 
   constructor(
     private postsService: PostsService
@@ -22,6 +23,7 @@ export class FeedComponent implements OnInit {
     this.postsService.getPosts().subscribe(data => {
       this.posts = data
       console.log(data)
+      this.posts = this.posts.slice(0, 10)
     });
   }
 

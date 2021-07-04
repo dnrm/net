@@ -19,9 +19,11 @@ export class PostComponent implements OnInit {
   @Input()
   public link: string = 'yes';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.title = this.title.charAt(0).toUpperCase() + this.title.substring(1);
   }
 
 }

@@ -12,6 +12,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FeedComponent } from './components/feed/feed.component';
 import { StoriesComponent } from './components/stories/stories.component';
 import { PostComponent } from './components/post/post.component';
+import { StoryComponent } from './components/story/story.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PostComponent } from './components/post/post.component';
     DashboardComponent,
     FeedComponent,
     StoriesComponent,
-    PostComponent
+    PostComponent,
+    StoryComponent
   ],
   imports: [
     BrowserModule,
