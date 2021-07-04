@@ -1,9 +1,9 @@
-<div class="post bg-primary border-2 border-gray-600 my-4 p-6 rounded-lg">
+<div class="post bg-primary border-2 border-gray-600 my-4 p-4 rounded-lg hover:shadow-lg">
   <a [routerLink]="'posts/' + id" *ngIf="link == 'yes'; else elseBlock">
     <img
       [src]="'https://source.unsplash.com/random?nature,forest&a=' + id"
       alt="Post cover"
-      class="h-64 w-full object-cover"
+      class="h-72 w-full object-cover rounded-lg"
     />
     <h2
       class="text-title text-3xl font-lora font-semibold py-2 hover:underline"
@@ -14,13 +14,13 @@
     <p class="pt-2 text-body">{{ content }}</p>
   </a>
   <ng-template #elseBlock>
-    <div class="flex">
+    <div class="grid grid-cols-1 md:grid-cols-2">
       <img
         [src]="'https://source.unsplash.com/random?nature,forest&a=' + id"
         alt="Post cover"
-        class="h-96 w-auto object-contain"
+        class="h-auto w-full object-contain rounded-lg"
       />
-      <div class="text ml-8">
+      <div class="text ml-0 md:ml-8">
         <h2
           class="text-title text-3xl font-lora font-semibold py-2"
         >
