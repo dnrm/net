@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#FFFFFF",
+          DEFAULT: "rgb(21, 32, 43)",
         },
         detail: {
           DEFAULT: "#008C8C"
@@ -16,13 +16,10 @@ module.exports = {
         title: {
           DEFAULT: "#000000"
         },
-        body: {
-          DEFAULT: "#242424"
+        background: {
+          DEFAULT: "rgb(21, 32, 43)"
         }
       },
-      fontFamily: {
-        'lora' : ['Lora', 'serif']
-      }
     },
   },
   variants: {},

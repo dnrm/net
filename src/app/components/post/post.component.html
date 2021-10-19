@@ -6,12 +6,12 @@
       class="h-72 w-full object-cover rounded-lg"
     />
     <h2
-      class="text-title text-3xl font-lora font-semibold py-2 hover:underline"
+      class="text-white text-3xl font-semibold py-2 hover:underline"
     >
       {{ title }}
     </h2>
     <hr class="border-solid border-gray-400" />
-    <p class="pt-2 text-body">{{ content }}</p>
+    <p class="pt-2 text-white">{{ content }}</p>
   </a>
   <ng-template #elseBlock>
     <div class="grid grid-cols-1 md:grid-cols-2">
@@ -22,12 +22,12 @@
       />
       <div class="text ml-0 md:ml-8">
         <h2
-          class="text-title text-3xl font-lora font-semibold py-2"
+          class="text-white text-3xl font-semibold py-2"
         >
           {{ title }}
         </h2>
         <hr class="border-solid border-gray-400" />
-        <p class="pt-2 text-body">{{ content }}</p>
+        <p class="pt-2 text-red-500">{{ content }}</p>
       </div>
     </div>
   </ng-template>
