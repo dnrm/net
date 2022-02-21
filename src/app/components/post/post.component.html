@@ -1,5 +1,5 @@
 <div class="post bg-primary border-2 border-gray-600 my-4 p-4 rounded-lg hover:shadow-lg">
-  <a [routerLink]="'posts/' + id" *ngIf="link == 'yes'; else elseBlock">
+  <a [routerLink]="'/posts/' + id" *ngIf="link == 'yes'; else elseBlock">
     <img
       [src]="'https://source.unsplash.com/random?nature,forest&a=' + id"
       alt="Post cover"
@@ -27,7 +27,7 @@
           {{ title }}
         </h2>
         <hr class="border-solid border-gray-400" />
-        <p class="pt-2 text-red-500">{{ content }}</p>
+        <p class="pt-2 text-white">{{ content }}</p>
       </div>
     </div>
   </ng-template>
